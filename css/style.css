@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  :root{
+--java: #21c6d7;
+--matisse: #1672a6;
+--atoll: #0c6776;
+--teal-blue: #05415f;
+--tangaroa: #042538;
+--blue-whale: #04393f;
+--observatory: #048c7c;
+--cocoa-brown: #342024;
+--woodsmoke: #141617;
+  }
+
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway';
+  overflow-x: hidden;
+
+
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #000;
+   color: white;
+
+
+}
+.inicio{
+  background: linear-gradient(to right,#000,#000);
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 49% 100%, 0 79%);
+  height: 90vh;
+ padding: 0 20px;
+}
+.inicio.contenido{
+  max-width: 1100px;
+  margin: auto;
+ 
+}
+.inicio header{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px  0;
+  align-items: center;
+  height: -3px;
+}
+.inicio.logo{
+  display: flex;
+  align-items: center;
+  
+  
+}
+.logo img {
+  border-radius: 50%;
+    box-shadow: 0 0 30px var(--java);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
+section .inicio{
+  overflow-x: hidden;
+}
+.inicio.logo i{
+  display:  inline-block;
+  margin-right: 20px;
+
+}
+#inicio header nav a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: uppercase ;
+  border: 2px solid transparent;
+  }
+#inicio header nav a:hover{
+  color: var(--java);
+  border-bottom: 2px solid var(--java);
+  
+}
+
+.contenedor-imagen img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 50%;
+  bottom: 20px;
+ 
+  }
+.contenedor-imagen img{
+position: relative;
+
+}
+
+.contenedor-imagen img{
+  position: relative;
+  top: 20px;
+
+}
+.inicio .fila{
+  display: flex;
+  margin-top: 50px;
+padding-bottom: 100px;
+position: relative;
+bottom: 20px;;
+}
+.inicio.fila .col{
+  width: 50%;
+ 
+}
+.inicio.fila .c h3 {
+ margin-bottom: 15px;
+ font-size: 40px;
+}
+.inicio.fila .col h2 {
+ margin-bottom: 20px;
+}
+.inicio.fila .col p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.inicio.fila.col.contenedor-imagen{
+  max-width: 100px;
+  margin: auto;
+ 
+}
+.inicio.fila.col.contenedor-imagen img{
+  width: 100%;
+  
+
+}
+
+.redes{
+  display: flex;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.redes a{
+  text-decoration: none;
+  color: white;
+  margin: 29px;
+  font-size: 20px;
+}
+.redes a:hover{
+  color: var(--java);
+}
+.col button{
+  background-color: white;
+  color: var(--tangaroa);
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left:  0 20px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.col button:hover{
+  background-color: var(--java);
+  color: white;
+  transform: scale(1.1);
+}
+
+
+.columna img{
+  width: 300px;
+  position: relative;
+  bottom: 10px;
+  left:  20px;
+  border-radius: 50%;
+    box-shadow: 0 0 25px var(--java);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    overflow-y: hidden;
+
+}
+.columna{
+  overflow-x: hidden;
+}
+
+
+.columna:hover{
+  transform: scale(1.1);
+
+
+}
+#icono-nav{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  transition: 3s;
+  display: none;
+}
+#icono-nav:hover{
+  background-color: var(--java);
+  color: white;
+}
+.sombra{
+  filter: drop-shadow(0em 30px 20px var(--java));
+
+}
+.sombra:hover{
+  filter: drop-shadow(0em 30px 20px var(--observatory));
+  transition: 3s;
+  scale: (1.1);
+  cursor: pointer;
+}
+.titulo-Sbremi{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+  font-size: 30px;
+}
+.card p{
+  margin-left:  30px;
+  margin-top: 30px;
+  
+}
+.img-sobremi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 390px;
+  left: 290px;
+  
+  
+}  
+.img-sobremi img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--java);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  position: relative;
+}
+.img-sobremi img:hover{
+  transform: scale(1.1);
+}
+.firma{
+  font-family: "Great Vibes", "cursive";
+  font-size: 30px;
+  color: var(--java);
+  text-align: left;
+}
+.titulo_skills {
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+}
+.skils-container{
+  padding-left: 20px;
+}
+ul li.skills-img1 img,
+ul li.skills-img2 img,
+ul li.skills-img3 img,
+ul li.skills-img4 img,
+ul li.skills-img5 img,
+ul li.skills-img6 img
+{
+  width: 100px;
+  height: 100px;
+}
+section.skills{
+  margin-bottom: 10px;
+}
+ul li.skills-nombre h3{
+    font-size: 20px;
+    position: relative;
+    left: 30px;
+    
+}
+.skills-linea{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.experiencia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-top: 500px;
+}
+.proyecto_titulo h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  
+
+}
+.proyecto_titulo p{
+  text-align: center;
+}
+.proyecto-container {
+  display: flex;
+  align-items: center; /* Vertically align items */
+}
+
+.img-proyecto {
+  margin-right: 20px; /* Adjust spacing between image and details */
+  margin-top: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.botones  {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px; /* Adjust spacing between buttons and project name */
+  
+  
+}
+button{
+  background-color: white;
+  color: var(--tangaroa);
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 0 20px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out; 
+
+  
+}
+button:hover {
+  background-color: var(--java);
+  color: white;
+}
+
+.botones a {
+  margin-right: 10px; /* Adjust spacing between buttons */
+  height:  30px;
+  overflow-y: hidden;
+  
+
+  
+
+}
+
+.proyecto-nombre {
+  margin-top: 10px; /* Adjust spacing between buttons and project name */
+}
+
+.experencia-titulo {
+  margin-top: 50px;;
+  text-align: center;
+}
+.experiencia-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.experiencia-detalle{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.experiencia-detalle h3{
+  margin-bottom: 10px;
+}
+img{
+  margin-right: 20px;
+}
+
+.laboral-titulo{
+  text-align: center;
+  margin-top: 50px;
+}
+ul .img-experiencia1 img,
+ul .img-experiencia2 img,
+.img-experiencia3 img,
+ul .img-experiencia4 img,
+ul .img-experiencia5 img
+{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+
+  margin-top: 20px;
+  margin-left: 20px;
+  
+
+}
+.Experiencia-container{
+  position: relative;
+  padding-left: 10px;
+  margin-right: 10px;
+  font-size: 2vh;
+}
+
+.experiencia-linea{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.titulo-academico{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+.fecha p{
+  position: relative;
+  left: 70px;;
+}
+ul .imagen-nistitucion1 img,
+ul .imagen-nistitucion2 img,
+ul .imagen-nistitucion3 img,
+ul .imagen-nistitucion4 img,
+ul .imagen-nistitucion5 img,
+ul .imagen-nistitucion6 img
+
+{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 50px;
+  margin-top: 10px;
+}
+.formacion-container{
+  padding-left: 10px;
+  margin-right: 10px;
+  font-size: 2vh;
+  
+}
+.formacion-linea{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+}
+section.Hobbies{
+  margin-top: 99px;
+}
+section.formacion-academica{
+  margin-top: 300px;
+}
+.titulo-hobbies{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+  margin-top:  85px;
+  top: 30px
+}
+ul li.intereses-img1 img,
+ul li.intereses-img2 img,
+ul li.intereses-img3 img,
+ul li.intereses-img4 img,
+ul li.intereses-img5 img
+{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 20px;
+  margin-top: 10px;
+  border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+  
+
+& li :hover{
+  transform: scale(1.1);
+  overflow-x: hidden;
+}
+}
+section.Hobbies{
+  margin-top: 200px
+}
+.interes-linea{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom:  300px;
+
+}
+
+section.contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+  .footer__rodape{
+    text-align: center;
+    
+  }
+.container-form{
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+.container-form h2{
+  margin-bottom: 15px;
+  font-size: 35px
+}
+.container-form p{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.container-form a{
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 700;
+}
+.container-form a i{
+  color: var(--java);
+  margin-right: 10px;
+}
+.container-form form .campo, textarea{
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.container-form form textarea{
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+.container-form .btn-enviar{
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: var(--java);
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+  background: var(--tangaroa);
+}
+form{
+  position: relative;
+  bottom: 15pc
+}
+
+.img{
+  position: relative;
+  top: 20pc;
+}
+.swal2-icon {
+  overflow: hidden;
+}
