@@ -22,211 +22,122 @@
   overflow-x: hidden;
 
 
+
 }
-html{
-  scroll-behavior: smooth;
-}
+
+
 body{
-  background-color: #000;
-   color: white;
-
-
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
 }
-.inicio{
-  background: linear-gradient(to right,#000,#000);
-  clip-path: polygon(0 0, 100% 0, 100% 66%, 49% 100%, 0 79%);
-  height: 90vh;
- padding: 0 20px;
-}
-.inicio.contenido{
-  max-width: 1100px;
-  margin: auto;
- 
-}
-.inicio header{
-  display: flex;
-  justify-content: space-around;
-  padding: 30px  0;
-  align-items: center;
-  height: -3px;
-}
-.inicio.logo{
-  display: flex;
-  align-items: center;
-  
-  
-}
-.logo img {
-  border-radius: 50%;
-    box-shadow: 0 0 30px var(--java);
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-}
-.logo:hover{
-  transform: scale(1.1);
-}
-section .inicio{
-  overflow-x: hidden;
-}
-.inicio.logo i{
-  display:  inline-block;
-  margin-right: 20px;
-
-}
-#inicio header nav a{
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  padding: 5px 10px;
-  text-transform: uppercase ;
-  border: 2px solid transparent;
-  }
-#inicio header nav a:hover{
-  color: var(--java);
-  border-bottom: 2px solid var(--java);
-  
-}
-
-.contenedor-imagen img{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding-bottom: 50%;
-  bottom: 20px;
- 
-  }
-.contenedor-imagen img{
-position: relative;
-
-}
-
-.contenedor-imagen img{
-  position: relative;
-  top: 20px;
-
-}
-.inicio .fila{
-  display: flex;
-  margin-top: 50px;
-padding-bottom: 100px;
-position: relative;
-bottom: 20px;;
-}
-.inicio.fila .col{
-  width: 50%;
- 
-}
-.inicio.fila .c h3 {
- margin-bottom: 15px;
- font-size: 40px;
-}
-.inicio.fila .col h2 {
- margin-bottom: 20px;
-}
-.inicio.fila .col p {
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-.inicio.fila.col.contenedor-imagen{
-  max-width: 100px;
-  margin: auto;
- 
-}
-.inicio.fila.col.contenedor-imagen img{
-  width: 100%;
-  
-
-}
-
-.redes{
-  display: flex;
-  text-decoration: none;
-  margin-top: 10px;
-  margin-bottom: 10px;
+ul {
   list-style: none;
 }
 
-.redes a{
+a {
+  color: var(--color-white);
   text-decoration: none;
-  color: white;
-  margin: 29px;
-  font-size: 20px;
+}
+
+.menu-btn {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  z-index: 2;
+}
+
+.container {
+  margin: 16px auto;
+  width: 90%;
+}
+
+/* NAVIGATION */
+
+.nav-main {
+  align-items: center;
+  display: flex;
+  font-size: 17px;
+  height: 60px;
+  justify-content: space-between;
+  padding: 20px 0;
+  overflow-y: hidden;
+}
+
+.nav-logo {
+  width: 60px;
+}
+
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li {
+  padding: 10px;
+}
+
+.nav-main ul li a {
+  padding: 2px;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #aeb5bc;
+}
+.foto{
+  position: relative;  
+  left: 100px;
+  width: 200px;
+  
+}
+.presentacion{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 300px;
+  border-radius: 10%;
+}
+.presentacion-titulos  {
+position: relative;
+bottom: 150px;
+padding-left:  80px;
+ 
+}
+
+.contenedor-redes{
+  position: relative;
+  bottom: 140px;
+  left: 100px;
+  overflow: hidden;
+
+}
+.redes{
+  display: flex;
+  padding: 10 0 30px;
+  align-items: center;
+  overflow: hidden;
 }
 .redes a:hover{
-  color: var(--java);
-}
-.col button{
-  background-color: white;
-  color: var(--tangaroa);
-  border: none;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 10px;
-  padding-left:  0 20px;
   cursor: pointer;
-  transition: 0.4s ease-in-out;
+color: #aeb5bc;
+
 }
-.col button:hover{
-  background-color: var(--java);
-  color: white;
-  transform: scale(1.1);
+.redes__item i {
+  
+margin-right: 20px;
+  overflow-y: hidden;
 }
 
 
-.columna img{
-  width: 300px;
-  position: relative;
-  bottom: 10px;
-  left:  20px;
-  border-radius: 50%;
-    box-shadow: 0 0 25px var(--java);
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-    overflow-y: hidden;
 
-}
-.columna{
-  overflow-x: hidden;
-}
-
-
-.columna:hover{
-  transform: scale(1.1);
-
-
-}
-#icono-nav{
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50%;
-  transition: 3s;
-  display: none;
-}
-#icono-nav:hover{
-  background-color: var(--java);
-  color: white;
-}
-.sombra{
-  filter: drop-shadow(0em 30px 20px var(--java));
-
-}
-.sombra:hover{
-  filter: drop-shadow(0em 30px 20px var(--observatory));
-  transition: 3s;
-  scale: (1.1);
-  cursor: pointer;
-}
+/* no  borrar de aca para abajo */
 .titulo-Sbremi{
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
-  margin-top: 30px;
+  margin-top: 200px;
   font-size: 30px;
 }
 .card p{
@@ -240,35 +151,26 @@ bottom: 20px;;
   align-items: center;
   position: relative;
   bottom: 390px;
-  left: 290px;
+  left: 690px;
   
   
 }  
-.img-sobremi img{
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  box-shadow: 0 0 25px var(--java);
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-  position: relative;
-}
-.img-sobremi img:hover{
-  transform: scale(1.1);
-}
+
+
 .firma{
   font-family: "Great Vibes", "cursive";
   font-size: 30px;
-  color: var(--java);
+  color: #ffff;
   text-align: left;
 }
 .titulo_skills {
   text-align: center;
   position: relative;
   font-size: 30px;
+  padding-top: 100px;
 }
 .skils-container{
-  padding-left: 20px;
+  padding-left: 10px;
 }
 ul li.skills-img1 img,
 ul li.skills-img2 img,
@@ -301,7 +203,9 @@ section.experiencia{
   align-items: center;
   justify-content: center;
   list-style: none;
+  position: relative;
   margin-top: 500px;
+
 }
 .proyecto_titulo h2{
   display: flex;
@@ -395,7 +299,7 @@ img{
 
 .laboral-titulo{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 300px;
 }
 ul .img-experiencia1 img,
 ul .img-experiencia2 img,
@@ -502,7 +406,7 @@ ul li.intereses-img5 img
 }
 }
 section.Hobbies{
-  margin-top: 200px
+  margin-top: 300px
 }
 .interes-linea{
   display: flex;
@@ -593,4 +497,281 @@ form{
 }
 .swal2-icon {
   overflow: hidden;
+}
+
+
+/*responsive*/
+
+
+
+@media (max-width: 950px) {
+  *{
+    z-index:-2;
+  }
+.nav-main{
+    display: flex;
+
+  
+}
+
+  .nav-menu  li{
+    z-index: 0;
+
+  }
+  .menu-btn {
+      display: block;
+  }
+ 
+
+  .nav-main ul.nav-menu {
+      background: black;
+      display: block;
+      height: 100%;
+      left: 0;
+      opacity: 0.9;
+      padding: 30px;
+      position: fixed;
+      top: 0;
+      transform: translateX(-400px);
+      transition: transform 0.5s ease-in-out;
+
+
+
+
+  }
+
+  .nav-main ul.nav-menu.show {
+      transform: translateX(-10px);
+      z-index: 0;
+
+  }
+
+  .nav-main ul.nav-menu li {
+      font-size: 20px;
+      padding: 12px;
+     
+
+  }
+
+   .foto{
+    position: relative;
+    left: 5px;
+    z-index: -2;
+   }
+  
+.presentacion{
+  position: relative;
+  left: 300px;
+
+
+  
+
+}
+.contenedor-redes{
+  
+
+  z-index: -2;
+}
+  .presentacion-titulos{
+    max-width: 768px ;
+    font-size: 14px;
+    margin-right: 300px;
+    z-index: -2;
+  }
+ 
+  .img-sobremi {
+    width: 35%;
+    position: relative;
+    left: 400px;
+    bottom: 600px;
+
+  }
+p{
+ 
+ 
+  position: relative;
+ margin-right:  500px;
+ z-index: -2;
+}
+
+.proyecto_linea{
+  position: relative;
+  left: 40px;
+}
+.proyecto_titulo p{
+  position: relative;
+  left: 230px;
+
+}
+
+.experiencia-linea{
+  display: flex;
+  flex-direction: column;
+
+}
+  .img-experiencia1
+  {
+    position: relative;
+    left: 100px;
+  }
+  .img-experiencia2{
+    position: relative;
+    left: 130px;
+  }
+  .img-experiencia3{
+    position: relative;
+    left:   40px;
+  }
+  .img-experiencia4{
+    position: relative;
+    left:   90px;
+  }
+  .img-experiencia5{
+    position: relative;
+    left:   170px;
+  }
+
+  .formacion-linea{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 200px;
+  }
+  .formacion-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 10px;
+    padding-right: 90px;
+  }
+
+  .img img {
+    display: none;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left:  20px;
+      margin-top:  200px;
+
+   
+   
+    }
+    textarea{
+     position: relative;
+      left: 80px;
+   
+    }
+    
+    .info-form h2 {
+      position: relative;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .info-form p {
+     display: flex;
+     position: relative;
+     left: 200px;
+     margin-right: 300px;
+      padding-right: 100px;
+    }
+
+.container-form{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  
+}
+.info-form a{
+  position: relative;
+  left: 200px;
+}
+.footer__rodape{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 220px;
+
+}
+.selection.footer p{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 200px;
+}
+
+
+    
+}
+   
+    
+    
+
+
+
+
+@media (max-width: 640px) {
+
+
+  .nav-main{
+    overflow-y: hidden;
+   
+    
+     
+  }
+  .nav-main {
+
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  transition: height 0.3s ease; /* Transición de altura para suavizar el efecto */
+  max-height: 200px; /* Altura máxima del menú cuando está visible */
+  overflow: hidden; /* Ocultar cualquier contenido adicional que sobresalga */
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px 10px;
+
+}
+
+.nav-menu li a:hover {
+  background-color: #555; /* Color de fondo cuando se pasa el cursor*/
+}
+
+
+
+  .contenedor-redes{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 29px;
+    top: 49px;
+  }
+.presentacion-titulos{
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  top: 20px;
+  z-index: 0;
+
+
+}
+
 }

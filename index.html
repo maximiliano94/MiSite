@@ -11,51 +11,46 @@
 </head>
 <body>
     <!---   MENU  inicio  --->
+    <div class="menu-btn">
+      <i class="fa-solid fa-bars fa-2x"></i>
+  </div>
+  <div class="container">
+    <nav class="nav-main">
+       <img src="img/logo3.png" alt="logo" class="nav-logo">
+        <ul class="nav-menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="#sobremi">Sobre mi </a></li>
+         <li><a href="#skills">Skills</a></li>
+         <li><a href="#proyectos">Proyectos</a></li>
+         <li><a href="#laboral">Experiencia Laboral</a></li>
+         <li><a href="#academica">Formación</a></li>
+         <li><a href="#intereses">Hobbies</a></li>
+         <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+    </nav>
+      <br>
+      <br>
+    <div class="presentacion">
+      <img src="img/fotoPerfil2.jpg" alt="fotoperfil" class="foto" >
+      </div>
+      <div class="presentacion-titulos">
+       <h2>Hola Mundo!, mi nombre <span>Maximiliano Jara Garcia <br> y </span>Desarrollo Paguinas Web</h2>
+              <br>
+       <h3> Soy Formado en Programación y actuamente estoy  <br>participando del proyecto Oracle One en Alura Latan </h3>
+      </div>
+         <div class="contenedor-redes">
+           <ul class="redes">
+             <!-- Pon los enlaces de tus redes sociales favoritas -->
+            <li class="redes__item"><a href="https://github.com/maximiliano94">Github <i class="fa-brands fa-github"></i></a></li>
+            <li class="redes__item"><a href="https://www.linkedin.com/in/maximilaino-jara-garcia-a72a3815a/">Linkedin <i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="redes__item"><a href="https://www.instagram.com/devwebmaxilianojara?igsh=MTV3Y29zM3FqMTJhOA==">Instagram<i class="fa-brands fa-instagram"></i></li>
+           </ul>
+         </div>
+    </div>
+    
+                 
 
-    <div class="contenedor">
-            <samp class="sombra">
-                <section id="inicio"class="inicio">
-                    <div class="contenido">
-                         <header>
-                           <div class="logo">
-                               <h1><img src="img/logo3.png" alt="" height="110px"></h1>
-                           </div>
-                           <nav id="nav">
-                             <a href="index.html">Home</a>
-                             <a href="#sobremi">Sobre mi</a>
-                             <a href="#skills">Skills</a>
-                             <a href="#proyectos">Proyectos</a>
-                             <a href="#laboral">Experiecia Laboral</a>
-                             <a href="#academica">Formación</a>
-                             <a href="#intereses">Hobbies</a>
-                             <a href="#Contacto">Contacto</a>
-                           </nav>
-                           <!--Icono de menu Responsive-->
-                            <div id="icono-nav">
-                               <i class="fa-solid fa-bars"></i>
-                            </div>
-                         </header>
-                          <div class="fila">
-                             <div class="col">
-                               <h2>Hola Mundo!, mi nombre <span>Maximiliano Jara Garcia <br> y </span>Desarrollo Paguinas Web</h2>
-                               <h3> Soy Formado en Programación y actuamente estoy  <br>participando del proyecto Oracle One en Alura Latan </h3>
-                               <ul class="redes">
-                                   <!-- Pon los enlaces de tus redes sociales favoritas -->
-                                  <li class="redes__item"><a href="https://github.com/maximiliano94">Github <i class="fa-brands fa-github"></i></a></li>
-                                  <li class="redes__item"><a href="https://www.linkedin.com/in/maximilaino-jara-garcia-a72a3815a/">Linkedin <i class="fa-brands fa-linkedin"></i></a></li>
-                                  <li class="redes__item"><a href="https://www.instagram.com/devwebmaxilianojara?igsh=MTV3Y29zM3FqMTJhOA==">Instagram<i class="fa-brands fa-instagram"></i></li>
-                                  
-                              </ul>
-                               <a href="pdf/CVMaximilianoJara2023.pdf" target="_blank"><button>Descargar cv</button></a>
-                             </div>
-                             <div class="columna">
-                                <div class="contenedor-img">
-                                   <img src="img/fotoPerfil2.jpg "  alt=""  height="200px">
-                                </div>
-                          </div>
-                    </div>
-            </section>
-            </samp>
+         
 
       <!-- Seccion sobre Mi-->
       <section id="sobremi" class="acercade">
@@ -83,9 +78,8 @@
                  <br>
                      <BR></BR>
                      <p class="firma">DevVoyage</p>
-                     <div class="img-sobremi">
-                        <img src="img/imgSobremi.jpg" alt="">
-                     </div>
+                     <img src="img/imgSobremi.jpg" alt="" class="img-sobremi">
+
                     
             </div>
             </div>
@@ -318,10 +312,9 @@
 <!--contacto-->
 <section class="Contacto" id="Contacto">
   <div class="container-form">
-    
     <div class="info-form">
         <h2>Contáctanos</h2>
-        <p>Queres contactarme? complete el siguente y me pondre en Contacto con usted lo antes posible</p>
+        <p>Queres contactarme? complete el siguente formulario  y me pondre en Contacto con usted lo antes posible</p>
         <a href="https://w.app/Devvoyage"><i class="fa fa-phone"></i> +56 9 32474415</a>
         <a href="#"><i class="fa fa-envelope"></i> devvoyage.2024@gmail.com</a>
         <a href="#"><i class="fa fa-map-marked"></i> Ciudad, Santiago(Puente Alto)</a>
@@ -359,8 +352,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-      
-
+    
+          
 
       document.addEventListener("DOMContentLoaded", function() {
       const form = document.getElementById("formularo");
@@ -407,9 +400,36 @@
       });
     });
   });
+
+
+  function hideMenu() {
+            var menu = document.querySelector('.nav-main');
+            menu.style.maxHeight = '0'; // Reducir la altura a cero
+            setTimeout(function() {
+                menu.style.display = 'none'; // Ocultar el menú después de la transición
+            }, 300); // Duración de la transición en milisegundos
+        }
+
+        // Obtener todos los enlaces de la lista del menú
+        var menuLinks = document.querySelectorAll('.nav-menu li a');
+
+        // Iterar sobre cada enlace del menú
+        menuLinks.forEach(function(link) {
+            // Agregar un evento de clic a cada enlace
+            link.addEventListener('click', function() {
+                // Ocultar el menú cuando se hace clic en un enlace
+                hideMenu();
+                window.addEventListener("load", () => {
+                document.querySelector(".menu-btn").addEventListener("click", () => {
+                document.querySelector(".nav-menu").classList.toggle("show");
+    });
+});
+            });
+        });
+
 </script>
 
   
-  <script src="js/validacion.js>"></script>
+  <script src="app.js"></script>
 </body>
 </html>
